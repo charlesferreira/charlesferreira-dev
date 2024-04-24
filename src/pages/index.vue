@@ -1,5 +1,5 @@
 <template>
-  <HelloWorld />
+  Index page
 </template>
 
 <script lang="ts" setup>
