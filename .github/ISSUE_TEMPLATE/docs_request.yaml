@@ -1,0 +1,30 @@
+name: "Solicitação de documentação"
+description: Solicite uma melhoria ou adição à documentação do projeto.
+title: "[Docs]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 📚 Solicitação de documentação
+        Use o formulário abaixo para solicitar uma melhoria ou adição à documentação do projeto.
+  - type: textarea
+    id: description
+    attributes:
+      label: Descrição
+      description: Descreva com detalhes a alteração que você gostaria de ver na documentação.
+    validations:
+      required: true
+  - type: textarea
+    id: pages
+    attributes:
+      label: Páginas afetadas
+      description: Liste as páginas da documentação que seriam afetadas por essa alteração.
+    validations:
+      required: false
+  - type: textarea
+    id: reason
+    attributes:
+      label: Motivo
+      description: Explique por que você acha que essa alteração melhoraria a documentação.
+    validations:
+      required: true
