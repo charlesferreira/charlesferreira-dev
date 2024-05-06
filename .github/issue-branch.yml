@@ -1,0 +1,52 @@
+gitSafeReplacementChar: '-'
+autoLinkIssue: true
+autoCloseIssue: true
+branches:
+  - label: question
+    skip: true
+  - label:
+      - bug
+      - dependencies
+      - security
+    prefix: fix/
+  - label:
+      - enhancement
+    prefix: feat/
+  - label:
+      - build
+    prefix: build/
+  - label:
+      - chore
+    prefix: chore/
+  - label:
+      - ci
+    prefix: ci/
+  - label:
+      - documentation
+    prefix: docs/
+  - label:
+      - style
+    prefix: style/
+  - label:
+      - refactor
+    prefix: refactor/
+  - label:
+      - performance
+    prefix: perf/
+  - label:
+      - test
+    prefix: test/
+  - label:
+      - breaking-change
+    prefix: breaking/
+  - label: '*'
+    prefix: issues/
+openPR: true
+copyIssueDescriptionToPR: true
+copyIssueLabelsToPR: true
+copyIssueAssigneeToPR: true
+copyIssueProjectsToPR: true
+copyIssueMilestoneToPR: true
+prSkipCI: true
+conventionalPrTitles: true
+conventionalStyle: semver
