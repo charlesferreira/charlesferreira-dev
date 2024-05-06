@@ -1,3 +1,16 @@
-@use 'vuetify/settings' with (
-  $body-font-family: 'Ubuntu'
+@use 'typography' as *;
+
+@forward 'vuetify/settings' with (
+  $body-font-family: $body-font-family,
+  $color-pack: false,
+  $typography: $typography,
+  $utilities: (
+    "text-mono": (
+      property: font-family,
+      class: text,
+      values: (
+        mono: $monospace
+      )
+    ),
+  )
 );
