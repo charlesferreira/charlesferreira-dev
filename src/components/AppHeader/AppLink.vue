@@ -1,3 +1,3 @@
 <template>
-  <router-view/>
+  <v-btn>Home</v-btn>
 </template>

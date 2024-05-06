@@ -1,10 +1,16 @@
-/**
- * src/styles/settings.scss
- *
- * Configures SASS variables and Vuetify overwrites
- */
+@use 'typography' as *;
 
-// https://vuetifyjs.com/features/sass-variables/`
-// @use 'vuetify/settings' with (
-//   $color-pack: false
-// );
+@forward 'vuetify/settings' with (
+  $body-font-family: $body-font-family,
+  $color-pack: false,
+  $typography: $typography,
+  $utilities: (
+    "text-mono": (
+      property: font-family,
+      class: text,
+      values: (
+        mono: $monospace
+      )
+    ),
+  )
+);
