@@ -1,44 +1,18 @@
-name: "Relatório de bug"
+name: "bug: 🐛 Relatar um bug"
 description: Relate um bug para o projeto.
-title: "[Bug]: "
+labels:
+  - bug
 body:
   - type: markdown
     attributes:
       value: |
-        ## 🐞 Relatório de bug
-        Use o formulário abaixo para relatar um bug no projeto.
+        ## Obrigado por relatar um bug!
+        Antes de enviar o relatório, [verifique se o bug já não foi relatado anteriormente][bugs]. Se você encontrar um relatório semelhante, adicione um comentário com detalhes adicionais para ajudar a resolver o problema.
+        
+        Para nos ajudar a resolver o problema, forneça o máximo de informações possível. Isso inclui detalhes sobre o ambiente em que o bug foi encontrado, passos para reproduzir o bug e qualquer outra informação relevante.
+        
+        [bugs]: ../../issues?q=is%3Aissue+is%3Aopen+label%3Abug
   - type: textarea
     id: description
     attributes:
       label: Descrição
-      description: Descreva com detalhes o bug que você encontrou.
-    validations:
-      required: true
-  - type: textarea
-    id: reproduction
-    attributes:
-      label: Passos para reproduzir
-      description: Descreva os passos necessários para reproduzir o bug.
-    validations:
-      required: true
-  - type: textarea
-    id: expected-behavior
-    attributes:
-      label: Comportamento esperado
-      description: Descreva o que você esperava que acontecesse.
-    validations:
-      required: true
-  - type: textarea
-    id: screenshots
-    attributes:
-      label: Capturas de tela
-      description: Se possível, adicione capturas de tela para ajudar a explicar o bug.
-    validations:
-      required: false
-  - type: textarea
-    id: environment
-    attributes:
-      label: Ambiente
-      description: Informe o sistema operacional, a versão do navegador e outras informações relevantes.
-    validations:
-      required: true

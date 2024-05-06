@@ -1,16 +1,9 @@
-name: "Nova funcionalidade"
-description: Solicite uma nova funcionalidade para o projeto.
-title: "[Feature]: "
+name: "feature: 🚀 Nova funcionalidade ou melhoria"
+description: Solicite uma nova funcionalidade ou melhoria para o projeto.
+labels:
+  - enhancement
 body:
-  - type: markdown
-    attributes:
-      value: |
-        ## 🚀 Nova funcionalidade
-        Use o formulário abaixo para solicitar uma nova funcionalidade para o projeto.
   - type: textarea
     id: description
     attributes:
       label: Descrição
-      description: Descreva com detalhes a nova funcionalidade que deseja adicionar ao projeto.
-    validations:
-      required: true
