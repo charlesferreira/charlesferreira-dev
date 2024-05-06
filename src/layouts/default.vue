@@ -1,5 +1,5 @@
 <template>
-  <v-app class="bg-surface">
+  <v-app class="bg-surface" app>
     <AppHeader />
     <v-container>
       <v-main>

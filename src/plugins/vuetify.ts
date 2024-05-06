@@ -16,6 +16,8 @@ const theme: ThemeDefinition = {
   colors: {
     background: '#1A1E23',
     surface: '#292F36',
+    grey: '#43454D',
+    white: '#FFFFFF',
     primary: '#12F7D6',
     secondary: '#98FAEC',
     success: '#00E68F',
