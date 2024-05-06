@@ -1,18 +1,99 @@
 $body-font-family: 'Ubuntu', sans-serif;
 $monospace: 'IBM Plex Mono', monospace;
+
 $typography: (
   'bg': (
     'size': 7rem,
     'weight': 400,
     'line-height': 8.375rem,
-    'letter-spacing': .0125em,
+    'letter-spacing': 0,
     'font-family': $body-font-family,
+    'text-transform': none
+  ),
+  'h1': (
+    'size': 4rem,
+    'weight': 400,
+    'line-height': 4.5rem,
+    'letter-spacing': 0,
+    'font-family': $body-font-family,
+    'text-transform': none
+  ),
+  'h2': (
+    'size': 2rem,
+    'weight': 400,
+    'line-height': 2.25rem,
+    'letter-spacing': 0,
+    'font-family': $body-font-family,
+    'text-transform': none
+  ),
+  'h2-mono': (
+    'size': 2rem,
+    'weight': 500,
+    'line-height': 2.625rem,
+    'letter-spacing': 0,
+    'font-family': $monospace,
+    'text-transform': none
+  ),
+  'button': (
+    'size': 1.25rem,
+    'weight': 400,
+    'line-height': 1.5rem,
+    'letter-spacing': 0,
+    'font-family': $body-font-family,
+    'text-transform': none
+  ),
+  'article': (
+    'size': 1rem,
+    'weight': 300,
+    'line-height': 2rem,
+    'letter-spacing': 0,
+    'font-family': $body-font-family,
+    'text-transform': none
+  ),
+  'body': (
+    'size': 1rem,
+    'weight': 300,
+    'line-height': 1.125rem,
+    'letter-spacing': 0,
+    'font-family': $body-font-family,
+    'text-transform': none
+  ),
+  'body-mono': (
+    'size': 1rem,
+    'weight': 400,
+    'line-height': 1.25rem,
+    'letter-spacing': 0,
+    'font-family': $monospace,
+    'text-transform': none
+  ),
+  'label': (
+    'size': 0.875rem,
+    'weight': 300,
+    'line-height': 1rem,
+    'letter-spacing': 0,
+    'font-family': $body-font-family,
+    'text-transform': none
+  ),
+  'label-bold': (
+    'size': 0.875rem,
+    'weight': 500,
+    'line-height': 1rem,
+    'letter-spacing': 0,
+    'font-family': $body-font-family,
+    'text-transform': none
+  ),
+  'number': (
+    'size': 3rem,
+    'weight': 500,
+    'line-height': 3.875rem,
+    'letter-spacing': 0,
+    'font-family': $monospace,
     'text-transform': none
   ),
   'logo': (
     'size': 2rem,
     'weight': 500,
-    'line-height': 1.3125rem,
+    'line-height': 2.625rem,
     'letter-spacing': 0,
     'font-family': $monospace,
     'text-transform': none
@@ -21,6 +102,22 @@ $typography: (
     'size': 1.5rem,
     'weight': 400,
     'line-height': 2rem,
+    'letter-spacing': 0,
+    'font-family': $monospace,
+    'text-transform': none
+  ),
+  'media': (
+    'size': 1rem,
+    'weight': 400,
+    'line-height': 1.25rem,
+    'letter-spacing': 0,
+    'font-family': $monospace,
+    'text-transform': none
+  ),
+  'code': (
+    'size': 0.875rem,
+    'weight': 400,
+    'line-height': 1.25rem,
     'letter-spacing': 0,
     'font-family': $monospace,
     'text-transform': none

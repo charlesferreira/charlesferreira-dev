@@ -1,3 +1,3 @@
 <template>
-  <h1>Blog</h1>
+  <h1 class="text-h1">Blog</h1>
 </template>
