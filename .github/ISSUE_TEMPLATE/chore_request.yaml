@@ -1,16 +1,9 @@
-name: "Solicitação de tarefa"
-description: Solicite uma tarefa para o projeto.
-title: "[Chore]: "
+name: "chore: 🧹 Solicitação de tarefa"
+description: Solicite uma nova tarefa para o projeto.
+labels:
+  - chore
 body:
-  - type: markdown
-    attributes:
-      value: |
-        ## 🧹 Solicitação de tarefa
-        Use o formulário abaixo para solicitar uma nova tarefa para o projeto.
   - type: textarea
     id: description
     attributes:
       label: Descrição
-      description: Descreva com detalhes a tarefa que deseja adicionar ao projeto.
-    validations:
-      required: true
