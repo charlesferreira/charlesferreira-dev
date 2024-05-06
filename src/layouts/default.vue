@@ -1,11 +1,11 @@
 <template>
-  <v-app>
-    <v-main>
-      <router-view />
-    </v-main>
+  <v-app class="bg-surface">
+    <AppHeader />
+    <v-container>
+      <v-main>
+        <router-view/>
+      </v-main>
+    </v-container>
   </v-app>
 </template>
 
-<script lang="ts" setup>
-  //
-</script>
