@@ -4,11 +4,26 @@ import tsconfigPaths from 'vite-tsconfig-paths'
 
 export default defineConfig({
   plugins: [
-    vue(),
+    vue({
+      template: {
+        compilerOptions: {
+          isCustomElement: tag => tag.startsWith('v-') || [
+            'AppLogo',
+            'AppLink',
+          ].includes(tag)
+        }
+      }
+    }),
     tsconfigPaths(),
   ],
   test: {
-    globals: true,
+    coverage: {
+      include: [
+        'src/components/**/*.vue',
+      ],
+      reporters: ['text-summary']
+    },
     environment: 'happy-dom',
+    globals: true,
   }
 })
