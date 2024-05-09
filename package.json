@@ -6,9 +6,8 @@
     "build": "vue-tsc --noEmit && vite build",
     "preview": "vite preview",
     "lint": "eslint . --fix --ignore-path .gitignore",
-    "test:unit": "vitest --dom",
-    "test:coverage": "vitest run --coverage",
-    "test:report": "vitest --ui --coverage.enabled=true"
+    "test": "vitest --dom",
+    "coverage": "vitest run --coverage"
   },
   "dependencies": {
     "@mdi/font": "6.2.95",
