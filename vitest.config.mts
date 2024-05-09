@@ -10,6 +10,7 @@ export default defineConfig({
           isCustomElement: tag => tag.startsWith('v-') || [
             'AppLogo',
             'AppLink',
+            'RouterLink'
           ].includes(tag)
         }
       }
@@ -21,7 +22,7 @@ export default defineConfig({
       include: [
         'src/components/**/*.vue',
       ],
-      reporters: ['default', 'html']
+      reporters: ['json-summary', 'html']
     },
     environment: 'happy-dom',
     globals: true,
