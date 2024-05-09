@@ -22,7 +22,8 @@ export default defineConfig({
       include: [
         'src/components/**/*.vue',
       ],
-      reporters: ['json-summary', 'html']
+      reporters: ['text', 'json', 'json-summary', 'html'],
+      reportOnFailure: true,
     },
     environment: 'happy-dom',
     globals: true,
