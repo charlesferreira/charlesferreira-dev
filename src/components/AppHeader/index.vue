@@ -7,8 +7,10 @@
     <v-container class="AppHeader fill-height pa-0 border-b border-grey border-opacity-100">
       <AppLogo/>
       <v-spacer/>
-      <AppLink to="/">Home</AppLink>
-      <AppLink to="/blog">Blog</AppLink>
+      <nav>
+        <AppLink to="/">Home</AppLink>
+        <AppLink to="/blog">Blog</AppLink>
+      </nav>
     </v-container>
   </v-app-bar>
 </template>
