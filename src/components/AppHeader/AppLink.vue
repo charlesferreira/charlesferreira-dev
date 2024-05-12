@@ -20,6 +20,7 @@ defineProps({
 <style scoped lang="scss">
 .AppLink {
   color: rgb(var(--v-theme-text-white));
+  text-decoration: none;
 
   &:hover {
     color: rgb(var(--v-theme-primary));
