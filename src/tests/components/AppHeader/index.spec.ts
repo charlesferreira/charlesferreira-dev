@@ -12,9 +12,15 @@ describe('AppHeader', () => {
     expect(wrapper.find('AppLogo').exists()).toBe(true)
   })
 
-  it('has a nav and links', () => {
-    const nav = wrapper.find('nav')
+  it('has a main nav and links', () => {
+    const nav = wrapper.find('nav#main-nav')
     expect(nav.exists()).toBe(true)
     expect(nav.findAll('AppLink').length).toBe(2)
+  })
+
+  it('has a social media nav and links', () => {
+    const nav = wrapper.find('nav#media-nav')
+    expect(nav.exists()).toBe(true)
+    expect(nav.findAll('AppMediaLink').length).toBe(3)
   })
 })
